@@ -373,4 +373,23 @@ main {
 }
 .header .item {
   padding: 30px 17px;
+}
+
+.home {
+  padding: 210px 0 180px;
+}
+.home .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 34px;
+}
+.home-content {
+  max-width: 589px;
+  width: 100%;
+}
+.home-img {
+  width: 100%;
+  max-width: 700px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,21 @@
+.home {
+    padding: 210px 0 180px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 34px;
+    }
+
+    &-content {
+        max-width: 589px;
+        width: 100%;
+    }
+    
+    &-img {
+        width: 100%;
+        max-width: 700px;
+    }
+}
