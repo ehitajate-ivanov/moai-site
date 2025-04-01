@@ -1,8 +1,8 @@
 @import "./normalize";
-
+@import "./utils/mixin";
 
 @import "./base";
-
+@import "./componets/button";
 
 @import "./layout/header";
 @import "./layout/home";

@@ -1,0 +1,20 @@
+.btn {
+    display: inline-block;
+    padding: 11px 23px;
+    background: linear-gradient(180deg, #303439 17.71%, #000812 97.4%);
+    border: 1px solid #0c0d0e;
+    border-radius: 32px;
+    width: 178px;
+    height: 54px;
+
+
+    span {
+        @include font($fw:500, $fz:18px, $lh:1.78);
+        letter-spacing: 0.04em;
+        text-align: center;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #fff 73.51%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

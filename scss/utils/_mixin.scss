@@ -1,0 +1,16 @@
+$font-instrument:"Instrument Sans", sans-serif;
+$font-jakarta: "Plus Jakarta Sans", sans-serif;
+
+@mixin font ($family:"instrument", $fz:14px, $fw:400px, $lh:1){
+    @if $family == "instrument" {
+        font-family: $font-instrument;
+    } @else if $family == "jakarta" {
+        font-family: $font-jakarta;
+    } @else {
+        font-family: $family;
+    }
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+
+}
