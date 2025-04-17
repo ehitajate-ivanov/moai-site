@@ -371,11 +371,37 @@ main {
   font-weight: 500;
   line-height: 1.78;
   letter-spacing: 0.04em;
-  text-align: center;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #fff 73.51%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.btn .bg-arrow::after {
+  content: "";
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  background: url(../img/arrow-circle-right.svg) no-repeat center;
+  width: 13px;
+  height: 13px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.subtitle {
+  border: 1px solid #e5ebf2;
+  border-radius: 18px;
+  padding: 6px 24px;
+  height: 36px;
+  display: inline-block;
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  background: linear-gradient(180deg, #fff 0%, #d7e8fd 100%);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #d11763;
 }
 
 .header-fixed {
@@ -406,6 +432,9 @@ main {
 }
 .header .item {
   padding: 30px 17px;
+}
+.header .btn {
+  text-align: center;
 }
 
 .home {

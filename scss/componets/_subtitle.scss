@@ -1,0 +1,14 @@
+.subtitle {
+    border: 1px solid #e5ebf2;
+    border-radius: 18px;
+    padding: 6px 24px;
+    height: 36px;
+    display: inline-block;
+    backdrop-filter: blur(9px);
+    background: linear-gradient(180deg, #fff 0%, #d7e8fd 100%);
+
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $pink;
+}

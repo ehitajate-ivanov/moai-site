@@ -11,10 +11,25 @@
     span {
         @include font($fw:500, $fz:18px, $lh:1.78);
         letter-spacing: 0.04em;
-        text-align: center;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #fff 73.51%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        position: relative;
+    }
+
+    .bg-arrow {
+        &::after {
+            content: "";
+            position: absolute;
+            right: -24px;
+            top: 50%;
+            background: url(../img/arrow-circle-right.svg) no-repeat center;
+            width: 13px;
+            height: 13px;
+            z-index: 1;
+            transform: translateY(-50%);
+
+        }
     }
 }
