@@ -5,8 +5,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 34px;
+        gap: 30px;
+
+        @media(max-width: 1350px){
+            gap: 5px;
+        }
+
+        @media(max-width: 980px){
+            gap: 20px;
+            flex-wrap: wrap;
+        }
     }
 
     &-content {
@@ -17,5 +25,41 @@
     &-img {
         width: 100%;
         max-width: 700px;
+
+        @media(max-width: 1220px){
+            max-width: 480px;
+        }
+
+        @media(max-width: 980px){
+            max-width: 380px;
+        }
+    }
+
+
+
+    &-title {
+        font-weight: 700;
+        font-size: 84px;
+        line-height: 1.12;
+        letter-spacing: -0.01em;
+        color: #000812;
+        margin: 20px 0;
+    }
+
+    .text-gradient {
+        background-image: url("../img/gradient.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &-text {
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        color: #615e59;
+        margin-bottom: 50px;
     }
 }

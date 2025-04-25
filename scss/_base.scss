@@ -18,6 +18,11 @@ button{
 
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
 html,body{
     min-height: 100vh;
     scroll-behavior: smooth;

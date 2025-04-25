@@ -4,11 +4,9 @@
         left: 0;
         top: 0;
         width: 100%;
-        background: green;
         z-index: 3;
 
         .container {
-            background: gray;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -26,7 +24,6 @@
         list-style: none;
         flex: 1;
         justify-content: center;
-        background: aqua;
     }
 
     .item {
