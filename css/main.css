@@ -556,4 +556,17 @@ main {
   to {
     top: 10px;
   }
+}
+.testimonial {
+  padding: 155px 0 220px;
+}
+.testimonial .subtitle {
+  margin: 0 auto;
+  display: block;
+  width: 185px;
+  padding: 6px 0;
+  background: linear-gradient(180deg, #f8792b 0%, #fab519 99.99%, rgba(236, 178, 47, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=main.css.map */
