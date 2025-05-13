@@ -48,3 +48,13 @@ main{
         padding: 0 15px;
     }
 }
+
+.title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $gray-title;
+}
+
