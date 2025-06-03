@@ -14,5 +14,23 @@
 
     .swiperText {
         position: relative;
+        margin-top: 65px;
+    }
+
+    .swiper-text {
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+        line-height: 1.4;
+        letter-spacing: -0.02em;
+        color: $gray-title;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+        width: 48px;
+        height: 48px;
     }
 }

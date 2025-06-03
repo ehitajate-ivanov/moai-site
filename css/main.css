@@ -342,7 +342,7 @@ body {
   flex-direction: column;
   font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -368,6 +368,10 @@ main {
   letter-spacing: -0.01em;
   text-align: center;
   color: #2a2e33;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  display: none;
 }
 
 .btn {
@@ -581,4 +585,20 @@ main {
 }
 .testimonial .swiperText {
   position: relative;
+  margin-top: 65px;
+}
+.testimonial .swiper-text {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #2a2e33;
+}
+.testimonial .swiper-button-next,
+.testimonial .swiper-button-prev {
+  width: 48px;
+  height: 48px;
 }/*# sourceMappingURL=main.css.map */
