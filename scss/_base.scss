@@ -23,6 +23,10 @@ img{
     display: block;
 }
 
+ul{
+    list-style: none;
+}
+
 html,body{
     min-height: 100vh;
     scroll-behavior: smooth;

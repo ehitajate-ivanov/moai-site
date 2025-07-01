@@ -331,6 +331,10 @@ img {
   display: block;
 }
 
+ul {
+  list-style: none;
+}
+
 html, body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -601,4 +605,46 @@ main {
 .testimonial .swiper-button-prev {
   width: 48px;
   height: 48px;
+}
+.testimonial .mySwiper-slider {
+  width: 40px;
+  height: 56px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial .mySwiper-slider .slider-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.testimonial .mySwiper-slider .title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: 0.04em;
+  color: #101828;
+}
+.testimonial .mySwiper-slider .text {
+  font-weight: 400;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -0.01em;
+  color: #667085;
+}
+.testimonial .swiper-slide-active .mySwiper-slider {
+  width: 260px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+.testimonial .swiper-slide-active .mySwiper-slider .title {
+  font-size: 18px;
+  line-height: 1.78;
+}
+.testimonial .swiper-slide-active .mySwiper-slider .text {
+  font-size: 16px;
+  line-height: 1.5;
 }/*# sourceMappingURL=main.css.map */

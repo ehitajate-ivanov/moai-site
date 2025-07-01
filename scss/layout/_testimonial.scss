@@ -28,9 +28,61 @@
         color: $gray-title;
     }
 
-    .swiper-button-next, 
+    .swiper-button-next,
     .swiper-button-prev {
         width: 48px;
         height: 48px;
+    }
+
+    .mySwiper-slider {
+        width: 40px;
+        height: 56px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .slider-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .title {
+            font-weight: 500;
+            text-align: center;
+            font-size: 0;
+            line-height: 0;
+            letter-spacing: 0.04em;
+            color: #101828;
+        }
+
+        .text {
+            font-weight: 400;
+            font-size: 0;
+            line-height: 0;
+            letter-spacing: -0.01em;
+            color: #667085;
+        }
+
+    }
+
+
+
+    .swiper-slide-active .mySwiper-slider {
+        width: 260px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+
+        .title {
+            font-size: 18px;
+            line-height: 1.78;
+        }
+
+        .text{
+            font-size: 16px;
+            line-height: 1.5;
+        }
     }
 }
