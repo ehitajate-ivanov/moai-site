@@ -1,5 +1,5 @@
 
-const swiper2 = new Swiper(".mySwiper", {
+const swiperThumbs = new Swiper(".mySwiper", {
     loop: true,
     slidesPerView: 4, // обычно делаем 3, чтобы видеть соседние слайды
     centeredSlides: true, // активный слайд по центру
@@ -9,15 +9,18 @@ const swiper2 = new Swiper(".mySwiper", {
     watchSlidesProgress: true,
 })
 
-const swiper = new Swiper(".swiperText", {
+const swiperText = new Swiper(".swiperText", {
     loop: true,
     slidesPerView: 1,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    thumbs: {
-        swiper: swiper2, // Связка через thumbs
-    },
+    // thumbs: {
+    //     swiper: swiperThumbs, // Связка через thumbs
+    // },
 })
+
+swiperText.controller.control = swiperThumbs;
+swiperThumbs.controller.control = swiperText;
 
