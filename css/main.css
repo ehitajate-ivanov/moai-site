@@ -338,6 +338,7 @@ ul {
 html, body {
   min-height: 100vh;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -674,8 +675,8 @@ main {
   width: 100%;
 }
 .strategy .quiz-container {
+  background: rgba(229, 235, 242, 0.4117647059);
   border-radius: 50px;
-  background: #fff;
   padding: 40px 50px 18px;
 }
 .strategy .quiz-tabs {
@@ -684,7 +685,7 @@ main {
   position: relative;
   margin-bottom: 50px;
 }
-.strategy li.quiz-tab {
+.strategy .quiz-tab {
   border-radius: 40px;
   width: 160px;
   height: 60px;
@@ -701,10 +702,19 @@ main {
   text-align: center;
   color: #2a2e33;
 }
+.strategy .quiz-block {
+  min-height: 397px;
+  width: 100%;
+}
 .strategy .quiz-content {
-  display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  display: none;
+}
+.strategy .quiz-content.active {
+  opacity: 1;
+  display: flex;
 }
 .strategy .quiz-content figure {
   max-width: 397px;
@@ -713,4 +723,18 @@ main {
 .strategy .quiz-text {
   max-width: 422px;
   width: 100%;
+}
+.strategy .quiz-text h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #2a2e33;
+}
+.strategy .quiz-text p {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.01em;
+  color: #707d8e;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

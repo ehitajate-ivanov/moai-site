@@ -1,4 +1,6 @@
 .strategy {
+
+
     .subtitle {
         background: linear-gradient(180deg, #3db54a 0%, #d0ea16 100%);
         background-clip: text;
@@ -30,8 +32,8 @@
     }
 
     .quiz-container {
+        background: #e5ebf269;
         border-radius: 50px;
-        background: #fff;
         padding: 40px 50px 18px;
     }
 
@@ -42,7 +44,7 @@
         margin-bottom: 50px;
     }
 
-    li.quiz-tab {
+    .quiz-tab {
         border-radius: 40px;
         width: 160px;
         height: 60px;
@@ -60,10 +62,21 @@
         color: $gray-title;
     }
 
+    .quiz-block {
+        min-height: 397px;
+        width: 100%;
+    }
+
     .quiz-content {
-        display: flex;
         justify-content: center;
         align-items: center;
+        opacity: 0;
+        display: none;
+
+        &.active {
+            opacity: 1;
+            display: flex;
+        }
 
         figure {
             max-width: 397px;
@@ -76,6 +89,22 @@
     .quiz-text {
         max-width: 422px;
         width: 100%;
+
+        h2 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+            color: #2a2e33;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.33;
+            letter-spacing: -0.01em;
+            color: #707d8e;
+            margin-bottom: 20px;
+        }
     }
 
 
