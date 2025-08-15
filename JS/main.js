@@ -24,3 +24,21 @@ const swiperText = new Swiper(".swiperText", {
 swiperText.controller.control = swiperThumbs;
 swiperThumbs.controller.control = swiperText;
 
+// quiz
+const tabs = document.querySelectorAll(".quiz-tab")
+// console.log(tabs);
+const contents = document.querySelectorAll(".quiz-content")
+
+
+tabs.forEach(tab => {
+    tab.addEventListener("click", () =>{
+        const target = tab.dataset.tab
+        // console.log(target)
+
+        tabs.forEach(elem => elem.classList.remove("active"))
+        tab.classList.add("active")
+
+        contents.forEach(tab => tab.classList.remove("active"))
+        document.getElementById(target).classList.add("active")
+    })
+})

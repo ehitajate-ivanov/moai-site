@@ -701,20 +701,41 @@ main {
   text-transform: uppercase;
   text-align: center;
   color: #2a2e33;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.strategy .quiz-tab.orange.active {
+  background: #f5a623;
+}
+.strategy .quiz-tab.blue.active {
+  background: #3b82f6;
+}
+.strategy .quiz-tab.green.active {
+  background: #22c55e;
+}
+.strategy .quiz-tab.red.active {
+  background: #ef4444;
+}
+.strategy .quiz-tab.purple.active {
+  background: #8b5cf6;
 }
 .strategy .quiz-block {
   min-height: 397px;
   width: 100%;
+  position: relative;
 }
 .strategy .quiz-content {
+  display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: 0.3s linear;
 }
 .strategy .quiz-content.active {
   opacity: 1;
-  display: flex;
 }
 .strategy .quiz-content figure {
   max-width: 397px;
