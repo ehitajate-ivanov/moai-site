@@ -670,9 +670,27 @@ main {
 .strategy .strategy-content .title {
   text-align: left;
 }
+@media (max-width: 980px) {
+  .strategy .strategy-content {
+    max-width: 100%;
+  }
+  .strategy .strategy-content .title {
+    text-align: center;
+  }
+  .strategy .strategy-content .subtitle {
+    margin: 0 auto;
+    display: block;
+    width: 185px;
+  }
+}
 .strategy-img {
   max-width: 391px;
   width: 100%;
+}
+@media (max-width: 980px) {
+  .strategy-img {
+    display: none;
+  }
 }
 .strategy .quiz-container {
   background: rgba(229, 235, 242, 0.4117647059);
@@ -684,6 +702,13 @@ main {
   justify-content: space-between;
   position: relative;
   margin-bottom: 50px;
+  gap: 20px;
+}
+@media (max-width: 980px) {
+  .strategy .quiz-tabs {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .strategy .quiz-tab {
   border-radius: 40px;
@@ -724,6 +749,11 @@ main {
   width: 100%;
   position: relative;
 }
+@media (max-width: 768px) {
+  .strategy .quiz-block {
+    min-height: 500px;
+  }
+}
 .strategy .quiz-content {
   display: flex;
   justify-content: center;
@@ -733,9 +763,16 @@ main {
   left: 0;
   width: 100%;
   transition: 0.3s linear;
+  gap: 20px;
 }
 .strategy .quiz-content.active {
   opacity: 1;
+}
+@media (max-width: 768px) {
+  .strategy .quiz-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .strategy .quiz-content figure {
   max-width: 397px;

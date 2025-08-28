@@ -24,11 +24,32 @@
         .title {
             text-align: left;
         }
+
+        @media (max-width:980px) {
+            max-width: 100%;
+
+            .title {
+                text-align: center;
+            }
+
+            .subtitle {
+                margin: 0 auto;
+                display: block;
+                width: 185px;
+
+            }
+
+        }
     }
 
     &-img {
         max-width: 391px;
         width: 100%;
+
+        @media (max-width:980px) {
+            display: none;
+
+        }
     }
 
     .quiz-container {
@@ -42,6 +63,13 @@
         justify-content: space-between;
         position: relative;
         margin-bottom: 50px;
+        gap: 20px;
+
+        @media (max-width:980px) {
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
     }
 
     .quiz-tab {
@@ -63,19 +91,23 @@
         transition: .3s linear;
         cursor: pointer;
 
-        &.orange.active{
+        &.orange.active {
             background: #f5a623;
         }
-        &.blue.active{
+
+        &.blue.active {
             background: #3b82f6;
         }
-        &.green.active{
+
+        &.green.active {
             background: #22c55e;
         }
-        &.red.active{
+
+        &.red.active {
             background: #ef4444;
         }
-        &.purple.active{
+
+        &.purple.active {
             background: #8b5cf6;
         }
     }
@@ -84,6 +116,11 @@
         min-height: 397px;
         width: 100%;
         position: relative;
+
+        @media (max-width:768px) {
+            min-height: 500px;
+           
+        }
     }
 
     .quiz-content {
@@ -95,12 +132,19 @@
         left: 0;
         width: 100%;
         transition: .3s linear;
+        gap: 20px;
 
         &.active {
             opacity: 1;
         }
 
-        
+        @media (max-width:768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+
 
         figure {
             max-width: 397px;
